@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{909CEFE1-B57A-4FB6-B2D0-75F5D733FB00}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RaceTrackingSystem</RootNamespace>
+    <AssemblyName>RaceTrackingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Reactive.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Monitor\RaceDataTesting\GUIHandlerTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\UpdateTest.cs" />
+    <Compile Include="Monitor\RaceData\FormObserver.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Monitor\RaceData\AthleteRaceStatus.cs" />
+    <Compile Include="Monitor\RaceData\IAthleteUpdateHandler.cs" />
+    <Compile Include="Monitor\RaceData\IRaceDataSource.cs" />
+    <Compile Include="Monitor\RaceData\RaceCourse.cs" />
+    <Compile Include="Monitor\RaceData\RaceEvent.cs" />
+    <Compile Include="Monitor\RaceData\SimulatedDataSource.cs" />
+    <Compile Include="Monitor\RaceData\Messages\AthleteUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Messages\DidNotFinishUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Messages\DidNotStartUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Messages\FinishedUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Messages\LocationUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Messages\RegistrationUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Messages\StartedUpdate.cs" />
+    <Compile Include="Monitor\RaceData\Properties\AssemblyInfo.cs" />
+    <Compile Include="Monitor\RaceDataTesting\RaceEventTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\SimulatedDataSourceTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\Messages\DidNotFinishUpdateTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\Messages\DidNotStartUpdateTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\Messages\FinishedUpdateTest .cs" />
+    <Compile Include="Monitor\RaceDataTesting\Messages\LocationUpdateTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\Messages\RegistrationUpdateTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\Messages\StartedUpdateTest.cs" />
+    <Compile Include="Monitor\RaceDataTesting\Properties\AssemblyInfo.cs" />
+    <Compile Include="Monitor\RaceData\AppLayer\DataProcessor.cs" />
+    <Compile Include="Monitor\RaceData\AppLayer\SimulatorController.cs" />
+    <Compile Include="Monitor\RaceData\AppLayer\Properties\AssemblyInfo.cs" />
+    <Compile Include="Monitor\RaceData\MyRaceMonitor\Properties\AssemblyInfo.cs" />
+    <Compile Include="Monitor\RaceData\MyRaceMonitor\Properties\Resources.Designer.cs" />
+    <Compile Include="Monitor\RaceData\MyRaceMonitor\Properties\Settings.Designer.cs" />
+    <Compile Include="Monitor\RaceData\Athlete.cs" />
+    <Compile Include="Monitor\RaceData\Subject.cs" />
+    <Compile Include="Monitor\RaceData\Observer.cs" />
+    <Compile Include="GUI\PositionObserver.Designer.cs" />
+    <Compile Include="GUI\Scoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Scoreboard.Designer.cs" />
+    <Compile Include="GUI\MilestoneObserver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MilestoneObserver.Designer.cs" />
+    <Compile Include="GUI\PositionObserver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ControlForm.Designer.cs" />
+    <Compile Include="GUI\ListObserverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ListObserverForm.Designer.cs" />
+    <Compile Include="GUI\GUIHandler.cs" />
+    <Compile Include="Monitor\RaceData\ObserverDecorator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Monitor\RaceMonitor.sln" />
+    <None Include="Monitor\Dist\RaceData.dll" />
+    <None Include="Monitor\RaceData\RaceData.csproj" />
+    <None Include="Monitor\RaceDataTesting\RaceDataTesting.csproj" />
+    <None Include="Monitor\RaceData\MyRaceMonitor.sln" />
+    <None Include="Monitor\RaceData\AppLayer\AppLayer.csproj" />
+    <None Include="Monitor\RaceData\Lib\RaceData.dll" />
+    <None Include="Monitor\RaceData\MyRaceMonitor\App.config" />
+    <None Include="Monitor\RaceData\MyRaceMonitor\MyRaceMonitor.csproj" />
+    <None Include="Monitor\RaceData\MyRaceMonitor\Properties\Resources.resx" />
+    <None Include="Monitor\RaceData\MyRaceMonitor\Properties\Settings.settings" />
+    <None Include="GUI\PositionObserver.resx" />
+    <None Include="GUI\ListObserverForm.resx" />
+    <None Include="GUI\MilestoneObserver.resx" />
+    <None Include="GUI\Scoreboard.resx" />
+    <None Include="GUI\ControlForm.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

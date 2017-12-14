@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{909CEFE1-B57A-4FB6-B2D0-75F5D733FB00}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RaceTrackingSystem/Monitor/RaceData/AppLayer/DataProcessor.cs">
+    <Files>
+      <File FileName="RaceTrackingSystem/Program.cs" Line="19" Column="77" />
+      <File FileName="RaceTrackingSystem/GUI/GUIHandler.cs" Line="17" Column="28" />
+      <File FileName="RaceTrackingSystem/GUI/ControlForm.cs" Line="47" Column="6" />
+      <File FileName="RaceTrackingSystem/GUI/ControlForm.Designer.cs" Line="87" Column="56" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/Messages/DidNotFinishUpdate.cs" Line="5" Column="39" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/AppLayer/SimulatorController.cs" Line="20" Column="66" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/SimulatedDataSource.cs" Line="28" Column="37" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/IAthleteUpdateHandler.cs" Line="11" Column="1" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/AthleteRaceStatus.cs" Line="7" Column="21" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/Messages/RegistrationUpdate.cs" Line="31" Column="6" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/Athlete.cs" Line="30" Column="9" />
+      <File FileName="RaceTrackingSystem/Monitor/RaceData/AppLayer/DataProcessor.cs" Line="28" Column="14" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RaceTrackingSystem PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
